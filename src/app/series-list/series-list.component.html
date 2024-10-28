@@ -1,0 +1,32 @@
+<div class="container mt-5">
+  <div class="custom-header">
+    <h5 class="mb-0">TV Series</h5>
+  </div>
+  
+  <div class="table-responsive"> <!-- Contenedor para el scroll -->
+    <table class="table table-striped table-bordered table-hover mt-3">
+      <thead>
+        <tr>
+          <th><strong>#</strong></th>
+          <th>Name</th>
+          <th>Channel</th>
+          <th>Seasons</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let serie of series; let i = index">
+          <td><strong>{{ i + 1 }}</strong></td>
+          <td><a [href]="serie.webpage" target="_blank" style="text-decoration: none;">{{ serie.name }}</a></td>
+          <td>{{ serie.channel }}</td>
+          <td>{{ serie.seasons }}</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+            <td colspan="4" class="font-weight-bold" id="seasonsAverage"><strong>Seasons average: {{ averageSeasons?.toFixed(0) ?? '0' }}</strong>
+            </td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+</div>

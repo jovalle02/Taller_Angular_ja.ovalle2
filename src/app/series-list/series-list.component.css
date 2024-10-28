@@ -1,0 +1,31 @@
+.custom-header {
+    background-color: #1FA3B6;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+.custom-header img {
+    width: 50px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+.table-responsive {
+  max-height: 350px;
+  overflow-y: auto;
+}
+
+.table-responsive::-webkit-scrollbar {
+  width: 8px; 
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 4px; 
+}
+
+.table-responsive::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
